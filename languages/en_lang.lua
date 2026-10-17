@@ -48,5 +48,21 @@ Locales["en_lang"] = {
 	GiveDocument = "You gave a document: ",
 	TargetAlreadyGotDocument = "The person already has this document!",
 	NoNeedItem = "You are missing the following item: ",
-	checkingYourDoc = " - Checking your document"
+	checkingYourDoc = " - Checking your document",
+	--- Feather port
+	ServiceUnavailable = "The licensing office is closed right now. Try again later.",
+	OrderReview = "Your payment was taken; the clerk will finish your papers shortly.",
+	NoExtendPermanent = "This document does not expire.",
+	InvalidDays = "Enter a whole number of days, at most ",
+	InvalidPhoto = "Paste a direct https link to the picture.",
+	LicenseSuspended = "This licence is suspended.",
+	Status = "Status: ",
+	StatusValid = "Valid",
+	StatusExpired = "Expired",
+	StatusSuspended = "Suspended",
+	StatusRevoked = "No longer valid",
+	DateOfBirth = "Date of Birth: ",
+	Unknown = "Unknown",
+	Male = "Male",
+	Female = "Female"
 }

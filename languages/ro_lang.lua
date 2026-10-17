@@ -48,5 +48,21 @@ Locales["ro_lang"] = {
 	GiveDocument = "Ai dat un document: ",
 	TargetAlreadyGotDocument = "Persoana are deja acest document!",
 	NoNeedItem = "Va lipseste urmatorul articol: ",
-	checkingYourDoc = " - Verifica documentul dvs"
- }
+	checkingYourDoc = " - Verifica documentul dvs",
+	--- Feather port
+	ServiceUnavailable = "Biroul de licente este inchis acum. Incearca mai tarziu.",
+	OrderReview = "Plata a fost luata; functionarul iti termina actele in curand.",
+	NoExtendPermanent = "Acest document nu expira.",
+	InvalidDays = "Introdu un numar intreg de zile, cel mult ",
+	InvalidPhoto = "Lipeste un link direct https catre poza.",
+	LicenseSuspended = "Aceasta licenta este suspendata.",
+	Status = "Stare: ",
+	StatusValid = "Valabila",
+	StatusExpired = "Expirata",
+	StatusSuspended = "Suspendata",
+	StatusRevoked = "Nu mai este valabila",
+	DateOfBirth = "Data nasterii: ",
+	Unknown = "Necunoscut",
+	Male = "Barbat",
+	Female = "Femeie"
+}
