@@ -1,7 +1,9 @@
 # bcc-documents on Feather
 
-**Status:** 1.0.0, code complete on 2026-10-18; release and offline flow tests
-pending on the development server. This port is the first consumer of
+**Status:** 1.0.0. On the development server on 2026-10-18:
+`DocumentsReleaseSmokeTest` 11/11 and `DocumentsFlowTest` 12/12 with the
+character offline (purchase, licence issue, extension, lost copy, photo,
+revocation). The in-game flows with two players are still to be tested. This port is the first consumer of
 `feather-licenses` (phase L3 of the
 [Licenses master plan](https://github.com/FeatherFramework/feather-framework-docs/blob/main/feather-licenses/Feather_Licenses_Master_Plan.md)).
 
