@@ -40,7 +40,8 @@ The images in `imgs/` can be copied to your inventory's item images.
 ## Credits
 
 Original resource by the [BCC Team](https://github.com/BryceCanyonCounty),
-inspired by [mms-id](https://github.com/RetryR1v2/mms-id). Licensed under the
-GPL-3.0, like the original.
+inspired by [mms-id](https://github.com/RetryR1v2/mms-id). The upstream
+repository has no licence file, so this port adds none; the BCC Team's terms
+apply.
 
 Need help? Join the BCC Discord: https://discord.gg/VrZEEpBgZJ
