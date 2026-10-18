@@ -41,6 +41,12 @@ SELECT 'weaponlicense', 'Weapon Licence', 'Permission to carry weapons. The lice
     (SELECT `id` FROM `categories` WHERE `name` = 'documents'), 'item_item', 'stack'
 WHERE NOT EXISTS (SELECT 1 FROM `items` WHERE `name` = 'weaponlicense');
 
+INSERT INTO `items`
+    (`name`, `display_name`, `description`, `max_quantity`, `max_stack_size`, `weight`, `usable`, `category_id`, `type`, `instance_mode`)
+SELECT 'peaceofficer', 'Peace Officer Commission', 'Commission as a peace officer, granted by the Sheriff. The licensing office records it.', 1, 1, 0.1, 1,
+    (SELECT `id` FROM `categories` WHERE `name` = 'documents'), 'item_item', 'stack'
+WHERE NOT EXISTS (SELECT 1 FROM `items` WHERE `name` = 'peaceofficer');
+
 -- Paper: used up when an officer gives a document by command (Config.NeedItem).
 INSERT INTO `items`
     (`name`, `display_name`, `description`, `max_quantity`, `max_stack_size`, `weight`, `usable`, `category_id`, `type`, `instance_mode`)

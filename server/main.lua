@@ -235,7 +235,7 @@ function DocsGive(officerSource, docType, targetSource)
     if not target then
         return Docs.Err('target_unavailable', 'Target has no active character.')
     end
-    if not DocsJobs.Holds(officer.characterId, docConfig.allowJob)
+    if not DocsJobs.Holds(officer.characterId, docConfig.allowJob, docConfig.allowMinGrade)
         and not DocsAuthority.IsAdminStaff(officer.characterId) then
         return Docs.Err('not_allowed', 'Officer may not give this document.')
     end

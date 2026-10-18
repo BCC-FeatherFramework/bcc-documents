@@ -7,11 +7,13 @@ DocsJobs = {}
 
 local RESOURCE = 'feather-jobs'
 
-function DocsJobs.Holds(characterId, jobKey)
+-- With minGradeOrdinal, only a grade at or above it matches.
+function DocsJobs.Holds(characterId, jobKey, minGradeOrdinal)
     if type(jobKey) ~= 'string' or jobKey == '' then
         return false
     end
-    local check = Docs.Call(RESOURCE, 'CheckAssignment', { characterId = characterId, jobKey = jobKey })
+    local check = Docs.Call(RESOURCE, 'CheckAssignment', { characterId = characterId, jobKey = jobKey,
+        minGradeOrdinal = tonumber(minGradeOrdinal) })
     return check.ok and check.value.matched == true
 end
 

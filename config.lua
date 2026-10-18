@@ -37,6 +37,7 @@ Config = {
     -- licenseKey: the feather-licenses key this document stands for. A document
     -- without one (the ID card) is an identity paper, not a license.
     -- allowJob: feather-jobs job key allowed to give the document by command.
+    -- allowMinGrade (optional): lowest grade ordinal of that job that may give it.
     DocumentTypes = {
         idcard = {
             displayName = "Identity Card",
@@ -114,6 +115,22 @@ Config = {
             sellNpc = false,
             givenCommand = "giveweaponlicense",
             allowJob = "doj",
+        },
+        -- bcc-law officers need this commission plus an on-duty police job.
+        -- Only a Sheriff (police grade 100) or Admin staff grant it.
+        peaceofficer = {
+            displayName = "Peace Officer Commission",
+            licenseKey = "peace_officer",
+            price = 0,
+            reissuePrice = 0,
+            changePhotoPrice = 0,
+            extendPrice = 0,
+            expiryDays = 0,  -- held until revoked
+            defaultPicture = '',
+            sellNpc = false,
+            givenCommand = "givepeacecommission",
+            allowJob = "police",
+            allowMinGrade = 100,
         }
     },
 
